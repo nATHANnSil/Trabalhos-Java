@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #110E0E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Line endX="1209.0" layoutX="153.0" layoutY="92.0" startX="-153.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <Button fx:id="home" layoutX="457.0" layoutY="17.0" mnemonicParsing="false" onAction="#abrir_home" style="-fx-background-color: 0;" text="Home" textFill="#f7a34a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="eventos" layoutX="634.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: 0;" text="Eventos" textFill="#f7a34a" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="avatar1" fitHeight="78.0" fitWidth="90.0" layoutX="1270.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/avatar" />
+         </image>
+      </ImageView>
+      <Text fx:id="bom_dia" fill="#f7a34a" layoutX="45.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bom dia, Hugo">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#150a0a" height="249.0" layoutX="28.0" layoutY="276.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="580.0" />
+      <ImageView fx:id="avatar2" fitHeight="108.0" fitWidth="103.0" layoutX="48.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/avatar" />
+         </image>
+      </ImageView>
+      <Text fx:id="nome" fill="#f7a34a" layoutX="163.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hugo">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Ellipse fill="#f55200" layoutX="272.0" layoutY="343.0" radiusX="18.0" radiusY="16.0" stroke="#520001" strokeType="INSIDE" />
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="263.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/check.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="eventos_realizados" fill="#f7a34a" layoutX="162.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 eventos realizados" wrappingWidth="332.08203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#110e0e" height="64.0" layoutX="213.0" layoutY="433.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="344.0" />
+      <Button fx:id="visualizar" layoutX="250.0" layoutY="434.0" mnemonicParsing="false" onAction="#visualizar_perfil" prefHeight="55.0" prefWidth="254.0" style="-fx-background-color: 0;" text="Visualizar Perfil" textFill="#f7a34a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#150a0a" height="420.0" layoutX="712.0" layoutY="170.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="597.0" />
+      <Line endX="349.0" endY="-96.0" fill="#f7a34a" layoutX="363.0" layoutY="338.0" startX="946.0" startY="-96.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <Text fill="#f7a34a" layoutX="875.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resumo do Evento">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="bar_contratado" fill="#f7a34a" layoutX="727.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bar Contratado: Drunk Drink">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#f7a34a" layoutX="731.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionário(s) Contratado(s): ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="data" fill="#f7a34a" layoutX="742.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dia: 05/05/2022">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="funcionario1" fill="#f7a34a" layoutX="1072.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Pablo Augusto">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="funcionario2" fill="#f7a34a" layoutX="1072.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Victor Hugo">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#110e0e" height="64.0" layoutX="714.0" layoutY="624.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="596.0" />
+      <Button fx:id="progresso" layoutX="767.0" layoutY="621.0" mnemonicParsing="false" onAction="#progresso_evento" prefHeight="43.0" prefWidth="508.0" style="-fx-background-color: 0;" text="Veja a progressão do seu evento  " textFill="#f7a34a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
