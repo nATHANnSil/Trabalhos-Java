@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ver_eventos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #110E0E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Line endX="1209.0" layoutX="153.0" layoutY="92.0" startX="-153.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <Button fx:id="home" layoutX="457.0" layoutY="17.0" mnemonicParsing="false" onAction="#abrir_home" style="-fx-background-color: 0;" text="Home" textFill="#f7a34a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="eventos" layoutX="634.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: 0;" text="Eventos" textFill="#f7a34a" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="avatar1" fitHeight="78.0" fitWidth="90.0" layoutX="1270.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/avatar" />
+         </image>
+      </ImageView>
+      <Text fx:id="bom_dia" fill="#f7a34a" layoutX="45.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bom dia, Hugo">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#150a0a" height="458.0" layoutX="28.0" layoutY="276.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="580.0" />
+      <ImageView fx:id="avatar2" fitHeight="108.0" fitWidth="103.0" layoutX="48.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/avatar" />
+         </image>
+      </ImageView>
+      <Text fx:id="nome" fill="#f7a34a" layoutX="163.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hugo">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Ellipse fill="#f55200" layoutX="272.0" layoutY="306.0" radiusX="18.0" radiusY="16.0" stroke="#520001" strokeType="INSIDE" />
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="263.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/check.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="eventos_realizados" fill="#f7a34a" layoutX="163.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 eventos realizados" wrappingWidth="332.08203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#110e0e" height="64.0" layoutX="227.0" layoutY="437.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="344.0" />
+      <Button fx:id="visualizar" layoutX="272.0" layoutY="437.0" mnemonicParsing="false" onAction="#visualizar_perfil" prefHeight="55.0" prefWidth="254.0" style="-fx-background-color: 0;" text="Visualizar Perfil" textFill="#f7a34a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#110e0e" height="64.0" layoutX="714.0" layoutY="624.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="596.0" />
+      <Button fx:id="vereventos" layoutX="767.0" layoutY="621.0" mnemonicParsing="false" onAction="#progresso_evento" prefHeight="43.0" prefWidth="508.0" style="-fx-background-color: 0;" text="Veja seus eventos" textFill="#f7a34a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+      <Text fx:id="eventos_agendados" fill="#f7a34a" layoutX="163.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 eventos realizados" wrappingWidth="332.08203125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Line endX="445.0" endY="420.0" layoutX="163.0" layoutY="102.0" startX="-135.0" startY="420.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <ImageView fx:id="star1" fitHeight="95.0" fitWidth="66.0" layoutX="56.0" layoutY="593.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Star%205.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star2" fitHeight="95.0" fitWidth="66.0" layoutX="151.0" layoutY="593.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Star%205.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star3" fitHeight="95.0" fitWidth="66.0" layoutX="257.0" layoutY="593.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Star%205.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star4" fitHeight="95.0" fitWidth="66.0" layoutX="348.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Star%205.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star5" fitHeight="95.0" fitWidth="66.0" layoutX="462.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/Star%205.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

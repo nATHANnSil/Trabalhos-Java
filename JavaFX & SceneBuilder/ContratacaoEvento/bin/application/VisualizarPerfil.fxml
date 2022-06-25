@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #110E0E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Line endX="1209.0" layoutX="153.0" layoutY="92.0" startX="-153.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <Button fx:id="home" layoutX="457.0" layoutY="17.0" mnemonicParsing="false" onAction="#abrir_home" style="-fx-background-color: 0;" text="Home" textFill="#f7a34a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="eventos" layoutX="634.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: 0;" text="Eventos" textFill="#f7a34a" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="avatar1" fitHeight="78.0" fitWidth="90.0" layoutX="1270.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/avatar" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#150a0a" height="395.0" layoutX="28.0" layoutY="276.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="580.0" />
+      <ImageView fx:id="avatar2" fitHeight="147.0" fitWidth="141.0" layoutX="52.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/avatar" />
+         </image>
+      </ImageView>
+      <Text fx:id="nome" fill="#f7a34a" layoutX="222.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hugo" wrappingWidth="89.94140625">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Ellipse fill="#f55200" layoutX="330.0" layoutY="185.0" radiusX="18.0" radiusY="16.0" stroke="#520001" strokeType="INSIDE" />
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="321.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/check.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#150a0a" height="420.0" layoutX="720.0" layoutY="239.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="597.0" />
+      <Line endX="349.0" endY="-96.0" fill="#f7a34a" layoutX="371.0" layoutY="407.0" startX="946.0" startY="-96.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <Text fill="#f7a34a" layoutX="892.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resumo do Evento">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="bar_contratado" fill="#f7a34a" layoutX="735.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bar Contratado: Drunk Drink">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#f7a34a" layoutX="739.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionário(s) Contratado(s): ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="data" fill="#f7a34a" layoutX="750.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dia: 05/05/2022">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="funcionario1" fill="#f7a34a" layoutX="1080.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Pablo Augusto">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="funcionario2" fill="#f7a34a" layoutX="1080.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Victor Hugo">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="sobre" fill="#f7a34a" layoutX="243.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sobre mim">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Line endX="-342.0" fill="#f7a34a" layoutX="373.0" layoutY="348.0" startX="235.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <Text fill="#f7a34a" layoutX="41.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. " wrappingWidth="513.47216796875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

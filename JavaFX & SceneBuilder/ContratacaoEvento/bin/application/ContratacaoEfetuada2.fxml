@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #110E0E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Line endX="1209.0" layoutX="153.0" layoutY="92.0" startX="-153.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <Button fx:id="home" layoutX="457.0" layoutY="17.0" mnemonicParsing="false" onAction="#abrir_home" style="-fx-background-color: 0;" text="Home" textFill="#f7a34a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="eventos" layoutX="634.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: 0;" text="Eventos" textFill="#f7a34a" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="avatar1" fitHeight="78.0" fitWidth="90.0" layoutX="1270.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/avatar" />
+         </image>
+      </ImageView>
+      <Text fx:id="bom_dia" fill="#f7a34a" layoutX="43.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bom dia, Hugo">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#150a0a" height="402.0" layoutX="34.0" layoutY="263.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="588.0" />
+      <ImageView fx:id="avatar_func1" fitHeight="82.0" fitWidth="88.0" layoutX="51.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Área%20de%20Trabalho/avatar" />
+         </image>
+      </ImageView>
+      <Text fx:id="nome_func1" fill="#f7a34a" layoutX="169.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Francisco" wrappingWidth="178.83984375">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Line endX="358.0" layoutX="264.0" layoutY="375.0" startX="-230.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <Text fill="#f7a34a" layoutX="170.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sobre o funcionário" wrappingWidth="318.13671875">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="descricao_func1" fill="#f7a34a" layoutX="54.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod." wrappingWidth="546.62890625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="bom_dia1" fill="#f7a34a" layoutX="43.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O funcionário abaixo foi contratado com sucesso!">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#150a0a" height="420.0" layoutX="730.0" layoutY="249.0" stroke="#f7a34a" strokeType="INSIDE" strokeWidth="2.0" width="597.0" />
+      <Line endX="349.0" endY="-96.0" fill="#f7a34a" layoutX="381.0" layoutY="417.0" startX="946.0" startY="-96.0" stroke="#f7a34a" strokeWidth="2.0" />
+      <Text fill="#f7a34a" layoutX="902.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resumo do Evento">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="bar_contratado" fill="#f7a34a" layoutX="745.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bar Contratado: Drunk Drink">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fill="#f7a34a" layoutX="749.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionário(s) Contratado(s): ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="data" fill="#f7a34a" layoutX="760.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dia: 05/05/2022">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="funcionario1" fill="#f7a34a" layoutX="1090.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Pablo Augusto">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="funcionario2" fill="#f7a34a" layoutX="1090.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Victor Hugo">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="funcionario3" fill="#f7a34a" layoutX="1088.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Francisco">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
