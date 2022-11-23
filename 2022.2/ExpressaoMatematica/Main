@@ -1,0 +1,205 @@
+class Celula {
+
+	private Caracteres item;
+	private Celula proximo;
+
+	public Celula(Caracteres novo) {
+		item = novo;
+		proximo = null;
+	}
+
+	public Celula() {
+
+		item = null;
+		proximo = null;
+	}
+
+	public Caracteres getItem() {
+		return item;
+	}
+
+	public void setItem(Caracteres item) {
+		this.item = item;
+	}
+
+	public Celula getProximo() {
+		return proximo;
+	}
+
+	public void setProximo(Celula proximo) {
+		this.proximo = proximo;
+	}
+}
+
+class Pilha {
+
+	private Celula fundo;
+	private Celula topo;
+
+	public Pilha() {
+
+		Celula sentinela;
+
+		sentinela = new Celula();
+		fundo = sentinela;
+		topo = sentinela;
+	}
+
+	public boolean pilhaVazia() {
+
+		boolean resp;
+
+		if (topo == fundo)
+			resp = true;
+		else
+			resp = false;
+
+		return resp;
+	}
+
+	public void empilhar(Caracteres novo) {
+
+		Celula novaCelula;
+
+		novaCelula = new Celula(novo);
+		novaCelula.setProximo(topo);
+		topo = novaCelula;
+	}
+
+	public Caracteres desempilhar() throws Exception {
+
+		Celula desempilhado;
+
+		if (!pilhaVazia()) {
+			desempilhado = topo;
+			topo = topo.getProximo();
+			desempilhado.setProximo(null);
+			return (desempilhado.getItem());
+		} else
+			throw new Exception("Não foi possível desempilhar: a pilha está vazia!");
+	}
+
+	public Caracteres consultarTopo() {
+
+		if (!pilhaVazia()) {
+			return (topo.getItem());
+		} else
+			return null;
+	}
+}
+
+class Caracteres {
+	private char caractere;
+	private int prioridade;
+
+	public char getCaractere() {
+		return caractere;
+	}
+
+	public int getPrioridade() {
+		return prioridade;
+	}
+
+	public void setCaractere(char caractere) {
+		this.caractere = caractere;
+	}
+
+	public void setPrioridade(char caractere) {
+		if (caractere == '*' || caractere == '/') {
+			this.prioridade = 3;
+		} else if (caractere == '+' || caractere == '-') {
+			this.prioridade = 2;
+		} else if (caractere == '(') {
+			this.prioridade = 1;
+		}
+	}
+
+	public Caracteres(char caractere) {
+		setCaractere(caractere);
+		setPrioridade(caractere);
+
+	}
+
+}
+
+class Main {
+	public static void main(String[] args) {
+
+		Pilha minhaPilha;
+		Caracteres cara;
+		char[] vetorCaractere;
+		char carac;
+		Caracteres topoPilha;
+		char variavel;
+
+		minhaPilha = new Pilha();
+
+		String entrada;
+
+		entrada = MyIO.readLine();
+
+		while (!entrada.equals("FIM")) {
+			entrada = entrada.replace(" ", "");
+			vetorCaractere = entrada.toCharArray();// quebrar a string no espaço
+			for (int i = 0; i < vetorCaractere.length; i++) {
+				carac = vetorCaractere[i];// caractere da posicao do vetor
+				if (carac >= '0' && carac <= '9' || carac >= 'A' && carac <= 'Z' || carac >= 'a' && carac <= 'z') {
+					System.out.print(carac + " ");
+				}
+
+				else {
+					cara = new Caracteres(carac);
+					try {
+						switch (carac) {
+						case '(':
+							minhaPilha.empilhar(cara);
+							break;
+						case ')':
+							topoPilha = minhaPilha.consultarTopo();
+							while (topoPilha != null && topoPilha.getCaractere() != '(') {
+								variavel = minhaPilha.desempilhar().getCaractere();
+								System.out.print(variavel + " ");
+								topoPilha = minhaPilha.consultarTopo();// consultar novo topo da pilha
+
+							}
+							minhaPilha.desempilhar();
+							break;
+							
+						default://se o caractere for diferente de () 
+							topoPilha = minhaPilha.consultarTopo();
+							while (topoPilha != null && topoPilha.getPrioridade()>=cara.getPrioridade()) {
+								variavel = minhaPilha.desempilhar().getCaractere();
+								System.out.print(variavel + " ");
+								topoPilha = minhaPilha.consultarTopo();// consultar novo topo da pilha
+
+							}
+							minhaPilha.empilhar(cara);
+							
+							break;
+
+						}
+					} catch (Exception e) {
+						e.printStackTrace();// imprimir a pilha de erros
+
+					}
+
+				}
+			}
+			
+			try {
+				while(!minhaPilha.pilhaVazia()) {
+					variavel=minhaPilha.desempilhar().getCaractere();
+					System.out.print(variavel +" ");
+				}
+				System.out.println();
+				
+			}catch (Exception e){
+				e.printStackTrace();
+			}
+
+			entrada = MyIO.readLine();
+
+		}
+
+	}
+}
